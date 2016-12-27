@@ -23,11 +23,6 @@
     height: 150px;
     float: left;
   }
-  .thumnail:hover{
-    -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  }
   .project-title{
     display: inline;
     padding : 0 0 5px 5px;
@@ -41,6 +36,11 @@
   .left{
     float: left;
   }
+  .left:hover{
+    -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  }
   .contents{
     width: 390px;
     padding: 10px 0;
@@ -52,6 +52,48 @@
     clear : both;
     border-bottom: 1px solid #dddddd;
   }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
 
   </style>
 </head>
@@ -83,7 +125,7 @@
               캡처되는 패킷 정보의 실시간표시, 프로토콜 필드 내용 및 덤프 표시 디스플레이 필터등 다양한 기능을 제공하고 있습니다.</br>
             </div>
             <div>Tools : Eclipse &nbsp;&nbsp;         &nbsp;&nbsp;Language : Java </div>
-            <div>발표자료 <a class="check" href="data/mobile.pptx">확인</a></div>
+            <div>발표자료 <a class="check" href="ppt/network.pptx">확인</a></div>
           </div>
           <div class="clear"></div>
         </div>
@@ -99,7 +141,7 @@
             문자들이 자료 집합에서 얼마나 자주 발생하는지를 확인하고 비율에 따라 자주발생하는 문자를 더 적은 비트로 부호화 하는 방법입니다.
           위와 같은 방식으로 임의의 텍스트 파일을 압축하고 해제할수 있습니다.</div>
             <div>Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
-            <div>발표자료 <a class="check" href="http://scsc3313.dothome.co.kr">확인</a></div>
+            <div>발표자료 <a class="check" href="ppt/huffman.pptx">확인</a></div>
           </div>
           <div class="clear"></div>
         </div>
@@ -134,7 +176,7 @@
         <h2 id="rsum">기타 활동</h2>
         <div class="article">
           <div class="left">
-            <img class="thumnail" src="img/algoritm.png">
+            <img class="thumnail" onclick="abc(this)" src="img/algoritm.png">
           </div>
           <div class="contents right">
             <h4 class="project-title">알고리즘 공부</h4>
@@ -145,7 +187,7 @@
         </div>
         <div class="article">
           <div class="left">
-            <img class="thumnail" src="images/camp.png">
+            <img class="thumnail" onclick="abc(this)" src="img/myimg.png">
           </div>
           <div class="contents right">
             <h4 class="project-title">카페 알바경험</h4>
@@ -155,7 +197,7 @@
         </div>
         <div class="article">
           <div class="left">
-            <img class="thumnail" onclick="window.open(this.src)" src="img/baseball.png">
+            <img class="thumnail" onclick="abc(this)" src="img/baseball.png">
           </div>
           <div class="contents right">
             <h4 class="project-title">'나는야구팬이다' 활동</h4>
@@ -165,7 +207,7 @@
         </div>
         <div class="article">
           <div class="left">
-            <img class="thumnail" onclick="window.open(this.src)" src="img/cost.png">
+            <img class="thumnail" onclick="abc(this)" src="img/cost.png">
           </div>
           <div class="contents right">
             <h4 class="project-title">'COST' 축구 동아리 활동</h4>
@@ -173,6 +215,16 @@
           </div>
           <div class="clear"></div>
         </div>
+
+        <div id="myModal" class="modal">
+
+<!-- The Close Button -->
+<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+<!-- Modal Content (The Image) -->
+<img class="modal-content" id="img01">
+</div>
+
       </div>
     </div>
 
@@ -201,6 +253,19 @@
       </div>
     </div> <!-- footer -->
   </div>
+
+  <script>
+
+var modal = document.getElementById('myModal');
+var modalImg = document.getElementById("img01");
+
+function abc(test){
+  modal.style.display = "block";
+  modalImg.src = test.src;
+}
+
+
+  </script>
 
 </body>
 </html>
