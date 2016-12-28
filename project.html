@@ -1,238 +1,240 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Moon SungYong &mdash; Résumé</title>
-<meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Moon SungYong &mdash; Résumé</title>
+  <meta name="viewport" content="width=device-width">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/main.css" media="all">
-<link rel="stylesheet" href="css/phone.css" media="all and (max-width:680px)">
-<link rel="stylesheet" href="css/syntax.css"/>
-<style type="text/css">
-.article{
-  width: 550px;
-  padding: 5px 0;
-  margin : 5px 0;
-}
-.time{
-  float: right;
-}
-.thumnail{
-  width: 150px;
-  height: 150px;
-  float: left;
-}
-.project-title{
-  display: inline;
-  padding : 0 0 5px 5px;
-}
-.contents{
-  margin: 5px 0 0 5px;
-}
-.right{
-  float: right;
-}
-.left{
-  float: left;
-}
-.left:hover{
-  -moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
-transform: scale(1.1);
-opacity: 0.7;
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css" media="all">
+  <link rel="stylesheet" href="css/phone.css" media="all and (max-width:680px)">
+  <link rel="stylesheet" href="css/syntax.css"/>
+  <style type="text/css">
+  .article{
+    width: 550px;
+    padding: 5px 0;
+    margin : 5px 0;
+  }
+  .time{
+    float: right;
+  }
+  .thumnail{
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+  .project-title{
+    display: inline;
+    padding : 0 0 5px 5px;
+  }
+  .contents{
+    margin: 5px 0 0 5px;
+  }
+  .right{
+    float: right;
+  }
+  .left{
+    float: left;
+  }
+  .left:hover{
+    -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.7;
 
-}
-.info{
-  margin-top: 6px
-}
-.contents{
-  width: 390px;
-  padding: 10px 0;
-}
-.check{
-  color: blue !important;
-}
-.clear{
-  clear : both;
-  border-bottom: 1px solid #dddddd;
-}
+  }
+  .info{
+    margin-top: 6px
+  }
+  .contents{
+    width: 390px;
+    padding: 10px 0;
+  }
+  .check{
+    color: blue !important;
+  }
+  .clear{
+    clear : both;
+    border-bottom: 1px solid #dddddd;
+  }
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
 .modal-content {
-  margin:auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
 }
 
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
 
 
-</style>
+  </style>
 </head>
 
 <body>
 
-<div class="site">
-  <div class="header">
-    <h1 class="title ">Moon SungYong</h1>
-    <a  class="extra" href="index.html">home</a>
-    <a  class="extra current" href="project.html">project & etc</a>
-    <a  class="extra " href="https://www.facebook.com/olleh1015">facebook</a>
+  <div class="site">
+    <div class="header">
+      <h1 class="title ">Moon SungYong</h1>
+      <a  class="extra" href="index.html">home</a>
+      <a  class="extra current" href="project.html">project & etc</a>
+      <a  class="extra " href="https://www.facebook.com/olleh1015">facebook</a>
 
-    <a class="lang  current " href="#">한국어</a>
-  </div>
-
-  <div class="content">
-    <h2 id="rsum">프로젝트</h2>
-    <div class="project">
-
-      <div class="article">
-        <div class="left">
-          <img class="thumnail" onclick="abc(this)" src="img/network.png">
-        </div>
-        <div class="contents right">
-          <h4 class="project-title">-네트워크 패킷 분석-</h4>
-          <p class="margin time">2016. 10.</p>
-          <div class="info">&nbsp;&nbsp;'네트워크 패킷 분석'은 JnetPcap 라이브러리를 사용한 소켓 프로그래밍 기술로
-            캡처되는 패킷 정보의 실시간표시, 프로토콜 필드 내용 및 덤프 표시 디스플레이 필터등 다양한 기능을 제공하고 있습니다.</br>
-          </div>
-          <div class="info">Tools : Eclipse &nbsp;&nbsp;         &nbsp;&nbsp;Language : Java </div>
-          <div class="info">발표자료 <a class="check" href="ppt/network.pptx">확인</a></div>
-        </div>
-        <div class="clear"></div>
-      </div>
-
-      <div class="article">
-        <div class="left">
-          <img class="thumnail" onclick="abc(this)" src="img/huffman.png">
-        </div>
-        <div class="contents right">
-          <h4 class="project-title">-허프만 코딩-</h4>
-          <p class="margin time">2014. 12.</p>
-          <div class="info">&nbsp;&nbsp; '허프만 코딩'은 자료 압축 방법중 하나이며 최소 중복 코딩에 기반한 알고리즘을 사용합니다.
-          문자들이 자료 집합에서 얼마나 자주 발생하는지를 확인하고 비율에 따라 자주발생하는 문자를 더 적은 비트로 부호화 하는 방법입니다.
-        위와 같은 방식으로 임의의 텍스트 파일을 압축하고 해제할수 있습니다.</div>
-          <div class="info">Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
-          <div class="info">발표자료 <a class="check" href="ppt/huffman.pptx">확인</a></div>
-        </div>
-        <div class="clear"></div>
-      </div>
-
-      <div class="article">
-        <div class="left">
-          <img class="thumnail"onclick="abc(this)"  src="img/database.png">
-        </div>
-        <div class="contents right">
-          <h4 class="project-title">-데이터 관리-</h4>
-          <p class="margin time">2015. 05.</p>
-          <div class="info">&nbsp;&nbsp; html을 사용하여 DB를 분석하고 데이터를 출력하는 홈페이지 입니다.
-          php를 사용하여 DB 데이터 삽입, 삭제, 검색, 변경 등 다양한 조작을 웹환경에서 가능 하도록 하였습니다.
-        BOLB타입을 통한 이미지 파일의 저장, 수정, 삭제 또한 가능합니다.</div>
-          <div class="info">Tools : My SQL &nbsp;&nbsp;         &nbsp;&nbsp;Language : Php html </div>
-        </div>
-        <div class="clear"></div>
-      </div>
-
-      <div class="article">
-        <div class="left">
-          <img class="thumnail" onclick="abc(this)" src="img/tetris.png">
-        </div>
-        <div class="contents right">
-          <h4 class="project-title">-테트리스-</h4>
-          <p class="margin time">2014. 08.</p>
-          <div class="info">&nbsp;&nbsp; 각기 다른 모양의 7가지 블록을 가로줄에 채워 넣으면
-          해당줄이 사라지면서 점수가 올라가는 대중게임 입니다. 문제 설계 및 인터페이스 설계,
-        클래스 설계를 한후 구현하고 기본적인 기능에 그림자 기능, 랭크 기능등의 기능도
-      추가하였습니다. </div>
-          <div class="info">Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
-        </div>
-        <div class="clear"></div>
-      </div>
+      <a class="lang  current " href="#">한국어</a>
     </div>
+
     <div class="content">
-      <h2 id="rsum">기타 활동</h2>
-      <div class="article">
-        <div class="left">
-          <img class="thumnail" onclick="abc(this)" src="img/algoritm.png">
+      <h2 id="rsum">프로젝트</h2>
+      <div class="project">
+
+        <div class="article">
+          <div class="left">
+            <img class="thumnail" onclick="abc(this)" src="img/network.png">
+          </div>
+          <div class="contents right">
+            <h4 class="project-title">-네트워크 패킷 분석-</h4>
+            <p class="margin time">2016. 10.</p>
+            <div class="info">&nbsp;&nbsp;'네트워크 패킷 분석'은 JnetPcap 라이브러리를 사용한 소켓 프로그래밍 기술로
+              캡처되는 패킷 정보의 실시간표시, 프로토콜 필드 내용 및 덤프 표시 디스플레이 필터등 다양한 기능을 제공하고 있습니다.</br>
+            </div>
+            <div class="info">Tools : Eclipse &nbsp;&nbsp;         &nbsp;&nbsp;Language : Java </div>
+            <div class="info">발표자료 <a class="check" href="ppt/network.pptx">확인</a></div>
+          </div>
+          <div class="clear"></div>
         </div>
-      <div class="contents right">
-          <h4 class="project-title">&nbsp;&nbsp;-알고리즘 트레이닝-</h4>
-          <div class="info">&nbsp;&nbsp; '알고스팟', '프로젝트 오일러' 와 같은 알고리즘 풀이 사이트에서
-            다양한 문제를 풀어보며 알고리즘 트레이닝을 하고 있고 동시에 현재는 '문제해결 전략' 이라는 책을 통하여
-            알고리즘에 대하여 좀 더 깊이 배우고 있습니다.</div>
+
+        <div class="article">
+          <div class="left">
+            <img class="thumnail" onclick="abc(this)" src="img/huffman.png">
+          </div>
+          <div class="contents right">
+            <h4 class="project-title">-허프만 코딩-</h4>
+            <p class="margin time">2014. 12.</p>
+            <div class="info">&nbsp;&nbsp; '허프만 코딩'은 자료 압축 방법중 하나이며 최소 중복 코딩에 기반한 알고리즘을 사용합니다.
+            문자들이 자료 집합에서 얼마나 자주 발생하는지를 확인하고 비율에 따라 자주발생하는 문자를 더 적은 비트로 부호화 하는 방법입니다.
+          위와 같은 방식으로 임의의 텍스트 파일을 압축하고 해제할수 있습니다.</div>
+            <div class="info">Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
+            <div class="info">발표자료 <a class="check" href="ppt/huffman.pptx">확인</a></div>
+          </div>
+          <div class="clear"></div>
         </div>
-        <div class="clear"></div>
+
+        <div class="article">
+          <div class="left">
+            <img class="thumnail"onclick="abc(this)"  src="img/database.png">
+          </div>
+          <div class="contents right">
+            <h4 class="project-title">-데이터 관리-</h4>
+            <p class="margin time">2015. 05.</p>
+            <div class="info">&nbsp;&nbsp; html을 사용하여 DB를 분석하고 데이터를 출력하는 홈페이지 입니다.
+            php를 사용하여 DB 데이터 삽입, 삭제, 검색, 변경 등 다양한 조작을 웹환경에서 가능 하도록 하였습니다.
+          BOLB타입을 통한 이미지 파일의 저장, 수정, 삭제 또한 가능합니다.</div>
+            <div class="info">Tools : My SQL &nbsp;&nbsp;         &nbsp;&nbsp;Language : Php html </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="article">
+          <div class="left">
+            <img class="thumnail" onclick="abc(this)" src="img/tetris.png">
+          </div>
+          <div class="contents right">
+            <h4 class="project-title">-테트리스-</h4>
+            <p class="margin time">2014. 08.</p>
+            <div class="info">&nbsp;&nbsp; 각기 다른 모양의 7가지 블록을 가로줄에 채워 넣으면
+            해당줄이 사라지면서 점수가 올라가는 대중게임 입니다. 문제 설계 및 인터페이스 설계,
+          클래스 설계를 한후 구현하고 기본적인 기능에 그림자 기능, 랭크 기능등의 기능도
+        추가하였습니다. </div>
+            <div class="info">Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
+          </div>
+          <div class="clear"></div>
+        </div>
       </div>
-      <div class="article">
-        <div class="left">
-          <img class="thumnail" onclick="abc(this)" src="img/myimg.png">
+      <div class="content">
+        <h2 id="rsum">기타 활동</h2>
+        <div class="article">
+          <div class="left">
+            <img class="thumnail" onclick="abc(this)" src="img/algoritm.png">
+          </div>
+          <div class="contents right">
+            <h4 class="project-title">&nbsp;&nbsp;-알고리즘 공부-</h4>
+            <div class="info">&nbsp;&nbsp; '알고스팟', '프로젝트 오일러' 와 같은 알고리즘 풀이
+              사이트에서 다양한 문제를 풀어보며 알고리즘 트레이닝을 하고 있고 동시에 현재는 '문제해결 전략' 이라는
+              책을 통하여 알고리즘에 대하여 좀 더 깊이 배우고 있습니다.
+            </div>
+          </div>
+          <div class="clear"></div>
         </div>
-        <div class="contents right">
-          <h4 class="project-title">&nbsp;&nbsp;-카페 알바경험-</h4>
-          <div class="info">&nbsp;&nbsp; 낯가림을 많이 하는 것을 고치고자 시작한 알바였습니다. 
-            아르바이트를 통하여 성격도 많이 바뀌었고 커피에 대해서도 알게 되어 좋은 경험이었습니다. </div>
+        <div class="article">
+          <div class="left">
+            <img class="thumnail" onclick="abc(this)" src="img/myimg.png">
+          </div>
+          <div class="contents right">
+            <h4 class="project-title">&nbsp;&nbsp;-카페 알바경험-</h4>
+            <div class="info">&nbsp;&nbsp; 낯가림을 많이 하는 것을 고치고자 시작한 알바였습니다.
+              아르바이트를 통하여 성격도 많이 바뀌었고 커피에 대해서도 알게 되어 좋은 경험이였습니다.
+             </div>
+          </div>
+          <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-      </div>
-      <div class="article">
-        <div class="left">
-          <img class="thumnail" onclick="abc(this)" src="img/baseball.png">
+        <div class="article">
+          <div class="left">
+            <img class="thumnail" onclick="abc(this)" src="img/baseball.png">
+          </div>
+          <div class="contents right">
+            <h4 class="project-title">&nbsp;&nbsp;-'나는야구팬이다' 활동-</h4>
+            <div class="info">&nbsp;&nbsp; 롯데자이언츠 응원단 '나는 야구팬이다' 일원으로
+            활동하며 지속적으로 야구 관람, 응원하며 취미를 즐기고 있습니다.</div>
+          </div>
+          <div class="clear"></div>
         </div>
-        <div class="contents right">
-          <h4 class="project-title">&nbsp;&nbsp;-'나는야구팬이다' 활동-</h4>
-          <div class="info">&nbsp;&nbsp; 롯데자이언츠 응원단 '나는 야구팬이다' 일원으로
-          활동하며 지속적으로 야구 관람, 응원하며 취미를 즐기고 있습니다.</div>
+        <div class="article">
+          <div class="left">
+            <img class="thumnail" onclick="abc(this)" src="img/cost.png">
+          </div>
+          <div class="contents right">
+            <h4 class="project-title">&nbsp;&nbsp;-'COST' 축구 동아리 활동-</h4>
+            <div class="info">&nbsp;&nbsp; 금오공과 대학교 컴퓨터공학과 축구동아리 'COST' 에서
+            선수로 활동하며 축구를 통해 운동도 하며 친목도 다지고 있습니다.</div>
+          </div>
+          <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-      </div>
-      <div class="article">
-        <div class="left">
-          <img class="thumnail" onclick="abc(this)" src="img/cost.png">
-        </div>
-        <div class="contents right">
-          <h4 class="project-title">&nbsp;&nbsp;-'COST' 축구 동아리 활동-</h4>
-          <div class="info">&nbsp;&nbsp; 금오공과 대학교 컴퓨터공학과 축구동아리 'COST' 에서
-          선수로 활동하며 축구를 통해 운동도 하며 친목도 다지고 있습니다.</div>
-        </div>
-        <div class="clear"></div>
       </div>
     </div>
-  </div>
 
-  <div id="myModal" class="modal">
+    <div id="myModal" class="modal">
 
 <!-- The Close Button -->
 <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
