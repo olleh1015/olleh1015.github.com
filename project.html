@@ -40,6 +40,11 @@
     -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  opacity: 0.7;
+
+  }
+  .info{
+    margin-top: 6px
   }
   .contents{
     width: 390px;
@@ -69,7 +74,7 @@
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
+    margin:auto;
     display: block;
     width: 80%;
     max-width: 700px;
@@ -119,13 +124,13 @@
             <img class="thumnail" onclick="abc(this)" src="img/network.png">
           </div>
           <div class="contents right">
-            <h4 class="project-title">네트워크 패킷 분석</h4>
-            <p class="margin time">2016.10.</p>
-            <div>&nbsp;&nbsp;'네트워크 패킷 분석'은 JnetPcap 라이브러리를 사용한 소켓 프로그래밍 기술로
+            <h4 class="project-title">-네트워크 패킷 분석-</h4>
+            <p class="margin time">2016. 10.</p>
+            <div class="info">&nbsp;&nbsp;'네트워크 패킷 분석'은 JnetPcap 라이브러리를 사용한 소켓 프로그래밍 기술로
               캡처되는 패킷 정보의 실시간표시, 프로토콜 필드 내용 및 덤프 표시 디스플레이 필터등 다양한 기능을 제공하고 있습니다.</br>
             </div>
-            <div>Tools : Eclipse &nbsp;&nbsp;         &nbsp;&nbsp;Language : Java </div>
-            <div>발표자료 <a class="check" href="ppt/network.pptx">확인</a></div>
+            <div class="info">Tools : Eclipse &nbsp;&nbsp;         &nbsp;&nbsp;Language : Java </div>
+            <div class="info">발표자료 <a class="check" href="ppt/network.pptx">확인</a></div>
           </div>
           <div class="clear"></div>
         </div>
@@ -135,26 +140,28 @@
             <img class="thumnail" onclick="abc(this)" src="img/huffman.png">
           </div>
           <div class="contents right">
-            <h4 class="project-title">허프만 코딩</h4>
-            <p class="margin time">2014.12.</p>
-            <div>&nbsp;&nbsp; '허프만 코딩'은 자료 압축 방법중 하나이며 최소 중복 코딩에 기반한 알고리즘을 사용합니다.
+            <h4 class="project-title">-허프만 코딩-</h4>
+            <p class="margin time">2014. 12.</p>
+            <div class="info">&nbsp;&nbsp; '허프만 코딩'은 자료 압축 방법중 하나이며 최소 중복 코딩에 기반한 알고리즘을 사용합니다.
             문자들이 자료 집합에서 얼마나 자주 발생하는지를 확인하고 비율에 따라 자주발생하는 문자를 더 적은 비트로 부호화 하는 방법입니다.
           위와 같은 방식으로 임의의 텍스트 파일을 압축하고 해제할수 있습니다.</div>
-            <div>Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
-            <div>발표자료 <a class="check" href="ppt/huffman.pptx">확인</a></div>
+            <div class="info">Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
+            <div class="info">발표자료 <a class="check" href="ppt/huffman.pptx">확인</a></div>
           </div>
           <div class="clear"></div>
         </div>
 
         <div class="article">
           <div class="left">
-            <img class="thumnail"onclick="abc(this)"  src="img/pocket.png">
+            <img class="thumnail"onclick="abc(this)"  src="img/database.png">
           </div>
           <div class="contents right">
-            <h4 class="project-title">몬스터 데이터 관리</h4>
-            <p class="margin time">2015.05.</p>
-            <div>&nbsp;&nbsp;</div>
-            <div>Tools : My SQL &nbsp;&nbsp;         &nbsp;&nbsp;Language : Php html </div>
+            <h4 class="project-title">-데이터 관리-</h4>
+            <p class="margin time">2015. 05.</p>
+            <div class="info">&nbsp;&nbsp; html을 사용하여 DB를 분석하고 데이터를 출력하는 홈페이지 입니다.
+            php를 사용하여 DB 데이터 삽입, 삭제, 검색, 변경 등 다양한 조작을 웹환경에서 가능 하도록 하였습니다.
+          BOLB타입을 통한 이미지 파일의 저장, 수정, 삭제 또한 가능합니다.</div>
+            <div class="info">Tools : My SQL &nbsp;&nbsp;         &nbsp;&nbsp;Language : Php html </div>
           </div>
           <div class="clear"></div>
         </div>
@@ -164,10 +171,13 @@
             <img class="thumnail" onclick="abc(this)" src="img/tetris.png">
           </div>
           <div class="contents right">
-            <h4 class="project-title">테트리스</h4>
-            <p class="margin time">2014. 6. ~ 2014. 12.</p>
-            <div>&nbsp;&nbsp;</div>
-            <div>Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
+            <h4 class="project-title">-테트리스-</h4>
+            <p class="margin time">2014. 08.</p>
+            <div class="info">&nbsp;&nbsp; 각기 다른 모양의 7가지 블록을 가로줄에 채워 넣으면
+            해당줄이 사라지면서 점수가 올라가는 대중게임 입니다. 문제 설계 및 인터페이스 설계,
+          클래스 설계를 한후 구현하고 기본적인 기능에 그림자 기능, 랭크 기능등의 기능도
+        추가하였습니다. </div>
+            <div class="info">Tools : Visual studio 2012 &nbsp;&nbsp;         &nbsp;&nbsp;Language : C++ </div>
           </div>
           <div class="clear"></div>
         </div>
@@ -179,8 +189,8 @@
             <img class="thumnail" onclick="abc(this)" src="img/algoritm.png">
           </div>
           <div class="contents right">
-            <h4 class="project-title">알고리즘 공부</h4>
-            <div>&nbsp;&nbsp;
+            <h4 class="project-title">&nbsp;&nbsp;-알고리즘 공부-</h4>
+            <div class="info">&nbsp;&nbsp;
             </div>
           </div>
           <div class="clear"></div>
@@ -190,8 +200,8 @@
             <img class="thumnail" onclick="abc(this)" src="img/myimg.png">
           </div>
           <div class="contents right">
-            <h4 class="project-title">카페 알바경험</h4>
-            <div>&nbsp;&nbsp;</div>
+            <h4 class="project-title">&nbsp;&nbsp;-카페 알바경험-</h4>
+            <div class="info">&nbsp;&nbsp;</div>
           </div>
           <div class="clear"></div>
         </div>
@@ -200,8 +210,9 @@
             <img class="thumnail" onclick="abc(this)" src="img/baseball.png">
           </div>
           <div class="contents right">
-            <h4 class="project-title">'나는야구팬이다' 활동</h4>
-            <div>&nbsp;&nbsp;</div>
+            <h4 class="project-title">&nbsp;&nbsp;-'나는야구팬이다' 활동-</h4>
+            <div class="info">&nbsp;&nbsp; 롯데자이언츠 응원단 '나는 야구팬이다' 일원으로
+            활동하며 지속적으로 야구 관람, 응원하며 취미를 즐기고 있습니다.</div>
           </div>
           <div class="clear"></div>
         </div>
@@ -210,8 +221,9 @@
             <img class="thumnail" onclick="abc(this)" src="img/cost.png">
           </div>
           <div class="contents right">
-            <h4 class="project-title">'COST' 축구 동아리 활동</h4>
-            <div>&nbsp;&nbsp;</div>
+            <h4 class="project-title">&nbsp;&nbsp;-'COST' 축구 동아리 활동-</h4>
+            <div class="info">&nbsp;&nbsp; 금오공과 대학교 컴퓨터공학과 축구동아리 'COST' 에서
+            선수로 활동하며 축구를 통해 운동도 하며 친목도 다지고 있습니다.</div>
           </div>
           <div class="clear"></div>
         </div>
