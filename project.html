@@ -72,6 +72,18 @@
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
+#caption {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+font-size: 2em;
+}
+
 /* Modal Content (Image) */
 .modal-content {
     margin:auto;
@@ -111,6 +123,7 @@
       <a  class="extra" href="index.html">home</a>
       <a  class="extra current" href="project.html">project & etc</a>
       <a  class="extra " href="https://www.facebook.com/olleh1015">facebook</a>
+      <a  class="extra  " onclick="def()" style="cursor:pointer">kakaotalk</a>
 
       <a class="lang  current " href="#">한국어</a>
     </div>
@@ -240,6 +253,7 @@
 
 <!-- Modal Content (The Image) -->
 <img class="modal-content" id="img01">
+<div id="caption"></div>
 </div>
 
     <div class="footer">
@@ -253,16 +267,13 @@
       <div>
         <p>
           <a  href="index.html">home</a><br />
-        </p>
-      </div>
-      <div>
-        <p>
-          <a  class="current"  href="project.html">project & etc</a>
-        </p>
-      </div>
-      <div>
-        <p>
           <a href="https://www.facebook.com/profile.php?id=100003175042715">facebook</a>
+        </p>
+      </div>
+      <div>
+        <p>
+          <a  class="current"  href="project.html">project & etc</a><br />
+          <a onclick="def()" style="cursor:pointer">kakaotalk</a>
         </p>
       </div>
     </div> <!-- footer -->
@@ -272,10 +283,19 @@
 
 var modal = document.getElementById('myModal');
 var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
 
 function abc(test){
   modal.style.display = "block";
   modalImg.src = test.src;
+  captionText.innerHTML = "";
+}
+
+function def()
+{
+  modal.style.display = "block";
+  modalImg.src = "img/kakao.png"
+  captionText.innerHTML = "ID : olleh1015";
 }
 
 

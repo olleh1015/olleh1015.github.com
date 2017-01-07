@@ -9,6 +9,62 @@
         <link rel="stylesheet" href="css/phone.css" media="all and (max-width:680px)">
         <link rel="stylesheet" href="css/syntax.css"/>
 
+          <style type="text/css">
+          .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (Image) */
+        .modal-content {
+            margin:auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 2em;
+}
+
+
+
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+          </style>
+
     </head>
     <body>
 
@@ -18,6 +74,7 @@
             <a  class="extra current " href="index.html">home</a>
             <a  class="extra " href="project.html">project & etc</a>
             <a  class="extra " href="https://www.facebook.com/olleh1015">facebook</a>
+            <a  class="extra " onclick="abc()" style="cursor:pointer">kakaotalk</a>
 
             <a class="lang  current " href="#">한국어</a>
           </div>
@@ -39,7 +96,7 @@ C, C++을 사용한 개발을 좋아합니다. <br>
 <p class="margin time">2016.04.</p>
 <p><strong>TOEIC 800점</strong></p>
 
-<h3 class="clearer" id="activity"><strong>이력</strong></h3>
+<h3 class="clearer" id="activity"><strong>약력</strong></h3>
 <p class="margin time">2017.02.</p>
 <p><strong>금오공대 졸업</strong></p>
 <p class="margin time">2016.07.</p>
@@ -96,6 +153,18 @@ C, C++을 사용한 개발을 좋아합니다. <br>
 
           </div>
 
+          <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <div id="caption"></div>
+
+      </div>
+
           <div class="footer">
             <div>
               <p>
@@ -106,21 +175,35 @@ C, C++을 사용한 개발을 좋아합니다. <br>
             </div>
             <div>
               <p>
-              <a  class="current" href="index.html">home</a>
-              </p>
-            </div>
-            <div>
-              <p>
-              <a  href="project.html">project & etc</a>
-              </p>
-            </div>
-            <div>
-              <p>
+              <a  class="current" href="index.html">home</a><br/>
               <a href="https://www.facebook.com/olleh1015">facebook</a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <a  href="project.html">project & etc</a><br>
+              <a  onclick="abc()" style="cursor:pointer">kakaotalk</a>
               </p>
             </div>
           </div>
         </div>
+
+        <script>
+
+      var modal = document.getElementById('myModal');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+
+
+      function abc(){
+        modal.style.display = "block";
+        modalImg.src = "img/kakao.png"
+        captionText.innerHTML = "ID : olleh1015";
+
+      }
+
+
+        </script>
 
     </body>
 </html>
